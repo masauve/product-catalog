@@ -9,7 +9,7 @@ spec:
   project: apps-product-catalog
   source:
     path: manifests/app/overlays/dev-quay
-    repoURL: https://github.com/gnunn-gitops/product-catalog.git
+    repoURL: https://github.com/masauve/product-catalog.git
     targetRevision: master
   info:
   - name: Environment
