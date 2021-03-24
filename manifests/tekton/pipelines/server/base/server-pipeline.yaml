@@ -19,7 +19,7 @@ spec:
     - name: image_dest_url
       type: string
       description: External registry location to copy image to
-      default: quay.io/gnunn/server
+      default: quay.io/msauve/server
     - name: push-to-prod
       description: "Set to true if you want the pipeline to create a PR to push to prod"
       type: string
@@ -236,4 +236,4 @@ spec:
       params:
         - name: commands
           value: |
-            tkn pipeline start push-prod-pr --prefix-name server -p image_dest_tag=$(tasks.generate-id.results.short-commit)-$(tasks.generate-id.results.build-uid) -p image_dest_url=quay.io/gnunn/server -p cluster=$(params.cluster) -p app=server -s github-pipeline -w name=git-source,claimName=manifest-source
+            tkn pipeline start push-prod-pr --prefix-name server -p image_dest_tag=$(tasks.generate-id.results.short-commit)-$(tasks.generate-id.results.build-uid) -p image_dest_url=quay.io/msauve/server -p cluster=$(params.cluster) -p app=server -s github-pipeline -w name=git-source,claimName=manifest-source
