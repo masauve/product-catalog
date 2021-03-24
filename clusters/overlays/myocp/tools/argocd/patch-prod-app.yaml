@@ -1,0 +1,6 @@
+- op: replace
+  path: /spec/source/repoURL
+  value: https://github.com/masauve/product-catalog-template
+- op: replace
+  path: /spec/source/path
+  value: clusters/overlays/myocp/prod
